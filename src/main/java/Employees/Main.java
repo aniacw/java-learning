@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Main {
 
-
     public static void main(String[] args) {
 
         List<Employees> theEmployeesList = new ArrayList<>();
@@ -38,18 +37,21 @@ public class Main {
 //        String employeeFound = employee.isSalaryWithinRange(2000, 3000);
 //        System.out.println(employeeFound);
 
+ //       Employees theList = new Employees(theEmployeesList);
 
-    public Employees isSalaryWithinRange(){
-            for (Employees employeeFound: theEmployeesList
-                 ) { if (employeeFound.getSalary() <= 2000 && employeeFound.getSalary() >= 3000){
-                     Employees result = employeeFound;
-                System.out.println(result);
 
-            }
-
-            }
-        }
+//    public boolean isSalaryWithinRange(){
+//        boolean result = false;
+//            for (Employees employeeFound: theEmployeesList) {
+//                if (employeeFound.getSalary() <= 2000 && employeeFound.getSalary() >= 3000){
+//                     result = true;
+//                System.out.println(result);
+//                }else {
+//                    System.out.println("Salary of " + employeeFound + " is not within the range");
+//                }
+//            }
+//            return result;
+//    }
     }
-
 }
 

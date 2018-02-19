@@ -1,11 +1,17 @@
 package Employees;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Employees {
     private String employeeName;
     private String employeeSurname;
     private int salary;
-    private int lowerBand;
-    private int upperBand;
+    private List<String> employeesList;
+
+    public Employees(List<String> employeesList) {
+        this.employeesList = employeesList;
+    }
 
     public Employees(String employeeName, String employeeSurname, int salary) {
         this.employeeName = employeeName;
@@ -33,6 +39,7 @@ public class Employees {
     public String getEmployeeSurname() {
         return employeeSurname;
     }
+
 
 //    public String isSalaryWithinRange(int lowerBand, int upperBand){
 //        if(salary >= lowerBand && salary <= upperBand){
