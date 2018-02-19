@@ -40,18 +40,18 @@ public class Main {
  //       Employees theList = new Employees(theEmployeesList);
 
 
-//    public boolean isSalaryWithinRange(){
-//        boolean result = false;
-//            for (Employees employeeFound: theEmployeesList) {
-//                if (employeeFound.getSalary() <= 2000 && employeeFound.getSalary() >= 3000){
-//                     result = true;
-//                System.out.println(result);
-//                }else {
-//                    System.out.println("Salary of " + employeeFound + " is not within the range");
-//                }
-//            }
-//            return result;
-//    }
+    public boolean isSalaryWithinRange(){
+        boolean result = false;
+            for (Employees employeeFound: theEmployeesList) {
+                if (employeeFound.getSalary() <= 2000 && employeeFound.getSalary() >= 3000){
+                     result = true;
+                System.out.println(result);
+                }else {
+                    System.out.println("Salary of " + employeeFound + " is not within the range");
+                }
+            }
+            return result;
+    }
     }
 }
 
