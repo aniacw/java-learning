@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eed94939-6c83-4498-83ce-23fd8f53665d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/Employees/CompanyStream.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Employees/CompanyStream.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Employees/Company.class" afterPath="$PROJECT_DIR$/out/production/classes/Employees/Company.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Employees/Main.class" afterPath="$PROJECT_DIR$/out/production/classes/Employees/Main.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Employees/Company.java" afterPath="$PROJECT_DIR$/src/main/java/Employees/Company.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Employees/Employees.java" afterPath="$PROJECT_DIR$/src/main/java/Employees/Employees.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Employees/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Employees/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -702,12 +695,12 @@
       <workItem from="1519933504085" duration="308000" />
       <workItem from="1520078690342" duration="61000" />
       <workItem from="1520113443651" duration="5482000" />
-      <workItem from="1520158951038" duration="5185000" />
+      <workItem from="1520158951038" duration="5265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33432000" />
+    <option name="totallyTimeSpent" value="33512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
