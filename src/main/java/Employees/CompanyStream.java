@@ -2,6 +2,7 @@ package Employees;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public final class CompanyStream {
 
@@ -21,8 +22,11 @@ public final class CompanyStream {
         theEmployesListStream.add(new Employees("George", "Green", 4900));
     }
 
-    public List<Employees> getTheEmployesListStream(){
-        return new ArrayList<>(theEmployesListStream);
+    public List<Employees> getTheEmployesListStream(int bottomRange, int upperRange){
+        return theEmployesListStream.stream()
+                .filter(salary -> salary.getSalary() >= bottomRange)
+                .filter(salary -> salary.getSalary() <= upperRange)
+                .collect(Collectors.toList());
     }
 
 }

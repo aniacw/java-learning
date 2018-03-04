@@ -21,11 +21,12 @@ public class Company {
         theEmployesList.add(new Employees("George", "Green", 4900));
     }
 
-    private List<Employees> employeesWithinRangeHelpList = new ArrayList<>();
 
-    public List<Employees> getAllEmployeesWithinRange(){
+
+    public List<Employees> getAllEmployeesWithinRange(int bottomRange, int upperRange){
+        List<Employees> employeesWithinRangeHelpList = new ArrayList<>();
         for (Employees employeeFound: theEmployesList) {
-            if (employeeFound.getSalary() >= 2000 && employeeFound.getSalary() <= 3000){
+            if (employeeFound.getSalary() >= bottomRange && employeeFound.getSalary() <= upperRange){
                 employeesWithinRangeHelpList.add(employeeFound);
                 System.out.println("Salary of " + employeeFound.getEmployeeName() + " " + employeeFound.getEmployeeSurname() + " is within range");//dlaczego to sie nie drukuje?
             }else {
@@ -34,7 +35,4 @@ public class Company {
         }
         return employeesWithinRangeHelpList;
     }
-
-
-
 }
