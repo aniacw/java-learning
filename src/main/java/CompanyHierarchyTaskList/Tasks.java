@@ -13,4 +13,8 @@ public class Tasks {
     public String getTaskName(){
         return taskName;
     }
+
+    public char getTaskGrade() {
+        return taskGrade;
+    }
 }

@@ -2,5 +2,5 @@ package CompanyHierarchyTaskList;
 
 public interface Employee {
 
-    String doTask();
+    String doTask(Tasks tasks);
 }
