@@ -27,14 +27,12 @@ public class Main {
         taskLists.add(task7);
 
         for(int i = 0; i < taskLists.size(); i++){
-            System.out.println("Intern's response upon receiving the following task: " + taskLists.get(0).getTaskName());
-            String isTaskForIntern = intern.doTask(taskLists.get(0));
-            System.out.println("Specialist's response upon receiving the following task: " + taskLists.get(0).getTaskName());
-            String isTaskForSpecialist = specialist.doTask(taskLists.get(0));
-            System.out.println("Manager's response upon receiving the following task: " + taskLists.get(0).getTaskName());
-            String isTaskForManager = manager.doTask(taskLists.get(0));
-            taskLists.remove(0);
+            System.out.println("Intern's response upon receiving the following task: " + taskLists.get(i).getTaskName());
+            String isTaskForIntern = intern.doTask(taskLists.get(i));
+            System.out.println("Specialist's response upon receiving the following task: " + taskLists.get(i).getTaskName());
+            String isTaskForSpecialist = specialist.doTask(taskLists.get(i));
+            System.out.println("Manager's response upon receiving the following task: " + taskLists.get(i).getTaskName());
+            String isTaskForManager = manager.doTask(taskLists.get(i));
         }
     }
-
 }

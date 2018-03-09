@@ -12,6 +12,6 @@ public class SumForLoop implements Sum {
             Integer currentNumber = helpList.get(i);
             sum += currentNumber;
         }
-        return sum;
+        return null;
     }
 }

@@ -11,6 +11,6 @@ public class SumForEachLoop implements Sum{
         for (Integer theNumber: helpListForLoop
              ) { sum += theNumber;
         }
-        return sum;
+        return null;
     }
 }
