@@ -4,13 +4,14 @@ import java.util.List;
 
 public class SumForEachLoop implements Sum{
 
-    List<Integer> helpListForLoop;
-    Integer sum = 0;
 
-    public List<Integer> sum(){
-        for (Integer theNumber: helpListForLoop
-             ) { sum += theNumber;
+
+
+    public Integer sum(List<Integer> list){
+        Integer sum = 0;
+        for (Integer theNumber: list) {
+            sum += theNumber;
         }
-        return null;
+        return sum;
     }
 }

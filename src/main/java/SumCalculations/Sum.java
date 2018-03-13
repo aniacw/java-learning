@@ -4,5 +4,5 @@ import java.util.List;
 
 public interface Sum {
 
-    List<Integer> sum();
+    Integer sum(List<Integer> list);
 }

@@ -5,13 +5,13 @@ import java.util.List;
 
 public class SumForLoop implements Sum {
 
-    public List<Integer> sum(){
+    public Integer sum(List<Integer> list){
         Integer sum = 0;
-        List<Integer> helpList = new ArrayList<>();
-        for(int i = 0; i < helpList.size(); i++){
-            Integer currentNumber = helpList.get(i);
+
+        for(int i = 0; i < list.size(); i++){
+            Integer currentNumber = list.get(i);
             sum += currentNumber;
         }
-        return null;
+        return sum;
     }
 }

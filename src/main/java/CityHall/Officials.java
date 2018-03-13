@@ -16,11 +16,12 @@ public class Officials {
         this.dept = dept;
     }
 
-    public Petitioners serves(Petitioners petitioners){
-        if(petitioners.getMatterType() == 'A'){
-
-        }
-    }
+//    public Petitioners serves(Petitioners petitioners){
+//        if(petitioners.getMatterType() == 'A'){
+//            petitioners
+//
+//        }
+//    }
 
 //    Officials housingDeptOfficial = new Officials("Jason", "Butter", "Housing Department");
 //    Officials cultureDeptOfficial = new Officials("Susanne", "Bright", "Culture Department");

@@ -5,10 +5,14 @@ import java.util.List;
 
 public final class SumStream implements Sum{
 
-    private final List<Integer> listForStream = new ArrayList<>();
 
-    public List<Integer> sum(){
-        return null;
+    public Integer sum(List<Integer> list){
+
+        return list.stream()
+                .mapToInt(number -> number.intValue())//zamienia typy
+                .sum();
+
+
 
 
 
