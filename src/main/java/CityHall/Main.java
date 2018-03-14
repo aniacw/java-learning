@@ -6,7 +6,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args){
 
-        List<Officials> housingDeptOfficial = new ArrayList<>();
+        List<Petitioners> housingDeptOfficial = new ArrayList<>();
         List<Officials> cultureDeptOfficial = new ArrayList<>();
         List<Officials> transportDeptOfficial = new ArrayList<>();
 
@@ -34,15 +34,12 @@ public class Main {
         listOfPetitioners.add(petitioner9);
         listOfPetitioners.add(petitioner10);
 
+        for(int i = 0; i<listOfPetitioners.size(); i++){
+            if(listOfPetitioners.get(i).getMatterType() == 'A'){
+                Petitioners housingPetitioner = listOfPetitioners.get(i);
+                housingDeptOfficial.add(housingPetitioner);
 
-
-        for(int i = 0; i< )
-
-
-
-
-// lista petentow w main
-        // urzednicy w main
-        //
+            }
+        }
     }
 }
