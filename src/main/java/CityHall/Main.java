@@ -37,15 +37,13 @@ public class Main {
         for(int i = 0; i<listOfPetitioners.size(); i++){
             if(listOfPetitioners.get(i).getMatterType() == 'A'){
                 housingDeptOfficial.addPetitioner(listOfPetitioners.get(i));
-                listOfPetitioners.remove(i);
             }
             if(listOfPetitioners.get(i).getMatterType() == 'B'){
                 cultureDeptOfficial.addPetitioner(listOfPetitioners.get(i));
-                listOfPetitioners.remove(i);
             }else {
                 transportDeptOfficial.addPetitioner(listOfPetitioners.get(i));
-                listOfPetitioners.remove(i);
             }
+            listOfPetitioners.removeAll(listOfPetitioners);///???
         }
     }
 }

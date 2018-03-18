@@ -16,10 +16,10 @@ public class Officials {
         this.dept = dept;
     }
 
-    public Officials(List<Petitioners> listOfPetitioners) {
-        Random random = new Random();
-        Petitioners randomPetitioner = random.nextInt(listOfPetitioners.size());
-
-        this.listOfPetitioners = listOfPetitioners;
-    }
+//    public Officials(List<Petitioners> listOfPetitioners) {
+//        Random random = new Random();
+//        Petitioners randomPetitioner = random.nextInt(listOfPetitioners.size());
+//
+//        this.listOfPetitioners = listOfPetitioners;
+//    }
 }
