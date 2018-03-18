@@ -1,14 +1,10 @@
-package CityHall;
+package CityHall2;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args){
-
-        Officials housingDeptOfficial = new Officials("Hank", "Heywood", "Housing Dept");
-        Officials cultureDeptOfficial = new Officials("Mary", "Jones", "Culture Dept");
-        Officials transportDeptOfficial = new Officials("Harrison", "Wells", "Transport Dept");
 
         List<Petitioners> listOfPetitioners = new ArrayList<>();
 
@@ -34,18 +30,7 @@ public class Main {
         listOfPetitioners.add(petitioner9);
         listOfPetitioners.add(petitioner10);
 
-        for(int i = 0; i<listOfPetitioners.size(); i++){
-            if(listOfPetitioners.get(i).getMatterType() == 'A'){
-                housingDeptOfficial.addPetitioner(listOfPetitioners.get(i));
-                listOfPetitioners.remove(i);
-            }
-            if(listOfPetitioners.get(i).getMatterType() == 'B'){
-                cultureDeptOfficial.addPetitioner(listOfPetitioners.get(i));
-                listOfPetitioners.remove(i);
-            }else {
-                transportDeptOfficial.addPetitioner(listOfPetitioners.get(i));
-                listOfPetitioners.remove(i);
-            }
-        }
+        System.out.println(listOfPetitioners);
+
     }
 }

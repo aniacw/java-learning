@@ -1,7 +1,8 @@
-package CityHall;
+package CityHall2;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Officials {
     private String firstName;
@@ -15,7 +16,10 @@ public class Officials {
         this.dept = dept;
     }
 
-    public void addPetitioner(Petitioners petitioners){///????
-        this.listOfPetitioners.add(petitioners);
+    public Officials(List<Petitioners> listOfPetitioners) {
+        Random random = new Random();
+        Petitioners randomPetitioner = random.nextInt(listOfPetitioners.size());
+
+        this.listOfPetitioners = listOfPetitioners;
     }
 }
