@@ -43,7 +43,7 @@ public class Main {
             }else {
                 transportDeptOfficial.addPetitioner(listOfPetitioners.get(i));
             }
-            listOfPetitioners.removeAll(listOfPetitioners);///???
         }
+        listOfPetitioners.removeAll(listOfPetitioners);///???
     }
 }
