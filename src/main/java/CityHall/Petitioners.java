@@ -14,4 +14,13 @@ public class Petitioners {
     public char getMatterType() {
         return matterType;
     }
+
+    @Override
+    public String toString() {
+        return "Petitioners{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", matterType=" + matterType +
+                '}';
+    }
 }
