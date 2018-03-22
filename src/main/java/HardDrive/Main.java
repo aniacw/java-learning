@@ -3,12 +3,28 @@ package HardDrive;
 public class Main {
     public static void main(String[] args){
 
-        Drive drive1 = new Drive("docs1", "photos1", "videos1", "programs1");
+        try {
+            Drive.useDrive("my drive");
+        } catch (Exception e) {
+            System.out.println("Drive already in use");
+        }
 
-        Drive.showDocuments(5);
-        Drive.getAllData(3);
-        Drive.showVideos(2);
-        Drive.showPhotos(1);
-        Drive.showProgramFiles(2);
+        try {
+            Drive.useDrive("my drive2");
+        } catch (Exception e) {
+            System.out.println("Drive already in use");
+        }
+
+        try {
+            Drive.useDrive("my drive3");
+        } catch (Exception e) {
+            System.out.println("Drive already in use");
+        }
+
+        try {
+            Drive.useDrive("my drive4");
+        } catch (Exception e) {
+            System.out.println("Drive already in use");
+        }
     }
 }
