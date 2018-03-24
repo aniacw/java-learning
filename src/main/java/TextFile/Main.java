@@ -12,8 +12,7 @@ public class Main {
         System.out.println(theFile);
 
         String[] theWords = theFile.split(", ");
-        for (String theSeparateWords: theWords
-             ) {
+        for (String theSeparateWords: theWords) {
             System.out.println(theSeparateWords);
         }
     }

@@ -5,6 +5,6 @@ public class Reader {
     }
 
     public Writer read(Writer writer){
-        writer.
+      return null;
     }
 }
