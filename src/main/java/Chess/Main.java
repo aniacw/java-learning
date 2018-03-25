@@ -11,5 +11,8 @@ public class Main {
         } else {
             System.out.println("Sorry, the move is out of bound!");
         }
+
+        knight.setValue(3,4);
+
     }
 }

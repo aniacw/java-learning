@@ -15,4 +15,14 @@ public class Piece {
     public Position getPosition() {
         return position;
     }
+
+    private int x; //row
+    private int y; //column
+
+    public void setValue(int x, int y){
+        if(x >= 0 && x < 8 && y>= 0 && y < 8){
+            this.x = x;
+            this.y = y;
+        }
+    }
 }
