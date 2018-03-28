@@ -8,7 +8,7 @@ public class Drive {
         this.name = name;
     }
 
-    public static Drive useDrive(String name) throws Exception {
+    public static Drive useDrive(String name) {
         if (driveInstance == null) {
             Drive drive = new Drive();
             drive.name = name;
@@ -16,13 +16,10 @@ public class Drive {
             System.out.println("Drive in use: " + drive);
             return drive;
         } else {
-            throw new Exception("Another drive already in use");///?????
+            System.out.println("Another drive already used");
+           return driveInstance;
         }
     }
-
-//    public static Drive getDriveInstance() {
-//        return driveInstance;
-//    }
 
     @Override
     public String toString() {
@@ -31,12 +28,3 @@ public class Drive {
                 '}';
     }
 }
-
-//    public static String showVideos(int n){
-//        if(n>0){
-//            System.out.println(videos);
-//            showVideos(n-1);
-//        }
-//        return null;
-//    }
-//
