@@ -7,7 +7,7 @@ public class DataStorage {
 
     public static DataStorage getObject(){
         if(dataStorageInstance == null){
-            DataStorage dataStorage = new DataStorage("storage");
+            DataStorage dataStorage = new DataStorage("my storage");
             dataStorageInstance = dataStorage;
             return dataStorage;
         } else {
