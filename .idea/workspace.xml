@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eed94939-6c83-4498-83ce-23fd8f53665d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/GuessTheMovie/Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/SingletonWriterReaderVer2/DataStorage.class" afterPath="$PROJECT_DIR$/out/production/classes/SingletonWriterReaderVer2/DataStorage.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/SingletonWriterReaderVer2/Main.class" afterPath="$PROJECT_DIR$/out/production/classes/SingletonWriterReaderVer2/Main.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GuessTheMovie/Main.java" afterPath="$PROJECT_DIR$/src/main/java/GuessTheMovie/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SingletonWriterReaderVer2/DataStorage.java" afterPath="$PROJECT_DIR$/src/main/java/SingletonWriterReaderVer2/DataStorage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SingletonWriterReaderVer2/Main.java" afterPath="$PROJECT_DIR$/src/main/java/SingletonWriterReaderVer2/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/System/Linux.java" afterPath="$PROJECT_DIR$/src/main/java/System/Linux.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/System/MacOS.java" afterPath="$PROJECT_DIR$/src/main/java/System/MacOS.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/System/Main.java" afterPath="$PROJECT_DIR$/src/main/java/System/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/System/OS.java" afterPath="$PROJECT_DIR$/src/main/java/System/OS.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/System/SystemFactory.java" afterPath="$PROJECT_DIR$/src/main/java/System/SystemFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/System/Windows.java" afterPath="$PROJECT_DIR$/src/main/java/System/Windows.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -64,11 +53,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SystemFactory.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SystemFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/System/SystemFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state relative-caret-position="432">
+              <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -77,8 +66,8 @@
       <file leaf-file-name="Linux.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/System/Linux.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            <state relative-caret-position="168">
+              <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
               <folding>
                 <element signature="e#94#95#0" expanded="true" />
                 <element signature="e#133#134#0" expanded="true" />
@@ -123,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/System/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -483,8 +472,8 @@
         <option value="$PROJECT_DIR$/src/main/java/System/Windows.java" />
         <option value="$PROJECT_DIR$/src/main/java/SingletonWriterReaderVer2/DataStorage.java" />
         <option value="$PROJECT_DIR$/src/main/java/System/Linux.java" />
-        <option value="$PROJECT_DIR$/src/main/java/System/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/System/SystemFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/System/Main.java" />
       </list>
     </option>
   </component>
@@ -875,12 +864,12 @@
       <workItem from="1522254347364" duration="9508000" />
       <workItem from="1522354983847" duration="1387000" />
       <workItem from="1522432953287" duration="8014000" />
-      <workItem from="1522485635318" duration="8389000" />
+      <workItem from="1522485635318" duration="9588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198410000" />
+    <option name="totallyTimeSpent" value="199609000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -904,7 +893,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51458335" sideWeight="0.50208336" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36666667" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36666667" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.246875" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="0" y="378" width="1920" height="323" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1342,25 +1331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/System/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/System/Linux.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#94#95#0" expanded="true" />
-            <element signature="e#133#134#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/System/OS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -1369,10 +1339,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/System/Linux.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding>
+            <element signature="e#94#95#0" expanded="true" />
+            <element signature="e#133#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/System/SystemFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="432">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/System/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
           <folding />
         </state>
       </provider>
