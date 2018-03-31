@@ -2,5 +2,5 @@ package System;
 
 interface OS {
 
-    void select();
+    String select();
 }

@@ -7,10 +7,10 @@ public class DataStorage {
 
     public static DataStorage getObject(){
         if(dataStorageInstance == null){
-            DataStorage dataStorage = new DataStorage("my storage");
+            DataStorage dataStorage = new DataStorage();
             dataStorageInstance = dataStorage;
             return dataStorage;
-        } else {
+        } else{
             return dataStorageInstance;
         }
     }
@@ -20,9 +20,8 @@ public class DataStorage {
     Random random = new Random();
 
 
-    public DataStorage(String text){
+    private DataStorage(){
         this.number = random.nextInt(50);
-        this.text = text;
     }
 
     public int getNumber() {

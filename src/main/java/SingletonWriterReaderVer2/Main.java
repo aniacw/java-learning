@@ -5,7 +5,7 @@ public class Main {
         Reader reader = new Reader();
         Writer writer = new Writer();
 
-        reader.readDataStorage();
         writer.setDataStorage();
+        reader.readDataStorage();
     }
 }
