@@ -21,21 +21,21 @@ public class Main {
         String randomMovie = theMoviesList.get(random.nextInt(theMoviesList.size()));
         System.out.println(randomMovie);
 
-        String mysteriousMovie = null;
+        String mysteriousMovie = randomMovie.replaceAll(".", "_");
 
-        for (int i = 0; i < randomMovie.length(); i++) {
-            mysteriousMovie = randomMovie.replaceAll(".", "_");
-        }
         System.out.println(mysteriousMovie);
 
+        System.out.println("Guess the letter:");
         Scanner in = new Scanner(System.in);
         String letter = in.next();
-        System.out.println("Guess the letter:");
 
-//        for (int n = 0; n < randomMovie.length(); n++) {
-//            if (in.equals(randomMovie.indexOf(n))) {
-//                mysteriousMovie.replace(mysteriousMovie.indexOf(n), letter);
-//            }
-//        }
+        String guessInProgress = null;
+
+        for (int n = 0; n < randomMovie.length(); n++) {
+            if (letter.equals(randomMovie.indexOf(n))) {
+                guessInProgress = mysteriousMovie.replace(String.valueOf(mysteriousMovie.indexOf(n)), letter);
+                System.out.println(guessInProgress);
+            }
+        }
     }
 }
