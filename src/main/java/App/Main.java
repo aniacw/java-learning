@@ -12,7 +12,7 @@ public class Main {
         App.AppBuilder.appBuilder()
                 .withName("Messenger")
                 .withVersion(10)
-                .withSystemName(SystemFactory.getOS(input).select())
+               // .withSystemName(SystemFactory.getOS(input).select())
                 .build();
     }
 }

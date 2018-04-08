@@ -4,11 +4,27 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
+
+        System.out.println("Please type the language...");
+        Scanner in = new Scanner(System.in);
+        String language = in.next();
+
+        System.out.println("Please type the word...");
+        Scanner inWord = new Scanner(System.in);
+        String typedWord = inWord.next();
+
         Hungarian hungarian = new Hungarian();
-        System.out.println(hungarian.translate("sernik"));
         German german = new German();
-        System.out.println(german.translate("sernik"));
         Slovak slovak = new Slovak();
-        System.out.println(slovak.translate("sernik"));
+
+        if(language.equals("Hungarian")){
+            System.out.println("Translation: " + hungarian.translate(typedWord));
+        }
+        if(language.equals("German")){
+            System.out.println("Translation: " +german.translate(typedWord));
+        }
+        if(language.equals("Slovak")){
+            System.out.println("Translation: " +slovak.translate(typedWord));
+        }
     }
 }

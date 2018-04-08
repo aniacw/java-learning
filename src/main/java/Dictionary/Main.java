@@ -1,15 +1,20 @@
 package Dictionary;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args){
 
-        Dictionary dictionary = DictionaryFactory.getTranslation("English");
-        System.out.println(dictionary.translate("sernik"));
-        Dictionary dictionary1 = DictionaryFactory.getTranslation("Spanish");
-        System.out.println(dictionary1.translate("sernik"));
-        Dictionary dictionary2 = DictionaryFactory.getTranslation("Italian");
-        System.out.println(dictionary2.translate("sernik"));
-        Dictionary dictionary3 = DictionaryFactory.getTranslation("Japanese");
-        System.out.println(dictionary3.translate("sernik"));
+        System.out.println("Please select the language...");
+        Scanner in = new Scanner(System.in);
+        String typedLanguage = in.next();
+
+        Dictionary dictionary = DictionaryFactory.getTranslation(typedLanguage);
+
+        System.out.println("Please type the word...");
+        Scanner inWord = new Scanner(System.in);
+        String typedWord = inWord.next();
+
+        System.out.println("Translation : " + dictionary.translate(typedWord));
     }
 }
