@@ -16,10 +16,6 @@ public class Main {
         Scanner in = new Scanner(System.in);
         String selectedDoctor = in.next();
 
-        if (selectedDoctor.equals("START")){
-
-        }
-
         List<Patient> queue = new ArrayList<>();
         Patient patient1 = new Patient("Johnson", 45);
         Patient patient2 = new Patient("Jackson", 21);
@@ -64,16 +60,23 @@ public class Main {
         queue.add(patient20);
 
         Random random = new Random();
-        Integer patientNumber = random.nextInt(queue.size()) + 1;
 
-        for (int i = 0; i > dentist.pearsonAvailability; i++) {
-            dentist.addPatient(queue.get(patientNumber));
-        }
-        for (int n = 0; n > gp.rodsonAvailability; n++) {
-            gp.addPatient(queue.get(patientNumber));
-        }
-        for (int m = 0; m > laryngologist.specterAvailability; m++) {
-            laryngologist.addPatient(queue.get(patientNumber));
+        while (!selectedDoctor.equals("START")) {
+            for (int i = 0; i > dentist.pearsonAvailability; i++) {
+                Integer patientNumber = random.nextInt(queue.size()) + 1;
+                dentist.addPatient(queue.get(patientNumber));
+                queue.remove(patientNumber);
+            }
+            for (int n = 0; n > gp.rodsonAvailability; n++) {
+                Integer patientNumber = random.nextInt(queue.size()) + 1;
+                gp.addPatient(queue.get(patientNumber));
+                queue.remove(patientNumber);
+            }
+            for (int m = 0; m > laryngologist.specterAvailability; m++) {
+                Integer patientNumber = random.nextInt(queue.size()) + 1;
+                laryngologist.addPatient(queue.get(patientNumber));
+                queue.remove(patientNumber);
+            }
         }
 
     }
