@@ -11,6 +11,9 @@ public class Doctor {
     private Integer surgery;
     private List<Patient> patients = new ArrayList<>();
 
+    public Doctor() {
+    }
+
     public Doctor(String name, Integer surgery) throws FileNotFoundException {
         this.name = name;
         this.surgery = surgery;

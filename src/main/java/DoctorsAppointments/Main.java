@@ -11,6 +11,7 @@ public class Main {
         Doctor dentist = new Doctor("Pearson", 10);
         Doctor gp = new Doctor("Rodson", 3);
         Doctor laryngologist = new Doctor("Specter", 7);
+        Doctor doctor = new Doctor();
 
         System.out.println("Please type the doctor's name...");
         Scanner in = new Scanner(System.in);
@@ -62,22 +63,31 @@ public class Main {
         Random random = new Random();
 
         while (!selectedDoctor.equals("START")) {
-            for (int i = 0; i > dentist.pearsonAvailability; i++) {
-                Integer patientNumber = random.nextInt(queue.size()) + 1;
-                dentist.addPatient(queue.get(patientNumber));
-                queue.remove(patientNumber);
-            }
-            for (int n = 0; n > gp.rodsonAvailability; n++) {
-                Integer patientNumber = random.nextInt(queue.size()) + 1;
-                gp.addPatient(queue.get(patientNumber));
-                queue.remove(patientNumber);
-            }
-            for (int m = 0; m > laryngologist.specterAvailability; m++) {
-                Integer patientNumber = random.nextInt(queue.size()) + 1;
-                laryngologist.addPatient(queue.get(patientNumber));
-                queue.remove(patientNumber);
+            try {
+                if (selectedDoctor.equals("Pearson")) {
+                    for (int i = 0; i > dentist.pearsonAvailability; i++) {
+                        Integer patientNumber = random.nextInt(queue.size()) + 1;
+                        dentist.addPatient(queue.get(patientNumber));
+                        queue.remove(patientNumber);
+                    }
+                }
+                if (selectedDoctor.equals("Rodson")) {
+                    for (int n = 0; n > gp.rodsonAvailability; n++) {
+                        Integer patientNumber = random.nextInt(queue.size()) + 1;
+                        gp.addPatient(queue.get(patientNumber));
+                        queue.remove(patientNumber);
+                    }
+                }
+                if (selectedDoctor.equals("Specter")) {
+                    for (int m = 0; m > laryngologist.specterAvailability; m++) {
+                        Integer patientNumber = random.nextInt(queue.size()) + 1;
+                        laryngologist.addPatient(queue.get(patientNumber));
+                        queue.remove(patientNumber);
+                    }
+                }
+            } catch (Exception e) {
+                System.out.println("Doctor not found");
             }
         }
-
     }
 }
