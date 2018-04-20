@@ -12,9 +12,11 @@ public class Main {
         Doctor gp = new Doctor("Rodson", 3);
         Doctor laryngologist = new Doctor("Specter", 7);
 
+        List<Doctor> doctors = new ArrayList<>();
+
         System.out.println("Please type the doctor's name...");
         Scanner in = new Scanner(System.in);
-        String selectedDoctor = in.next();
+        //String selectedDoctor;
 
         List<Patient> queue = new ArrayList<>();
         Patient patient1 = new Patient("Johnson", 45);
@@ -59,42 +61,61 @@ public class Main {
         queue.add(patient19);
         queue.add(patient20);
 
+        do {
+            String selectedDoctor = in.next();
+            Integer availability = Doctor.checkAvailability(selectedDoctor);
+            if (availability > 0) {
+                doctors.add(new Doctor(selectedDoctor, availability));
+            }
+        } while (in.next() != "START") ;
+
         Random random = new Random();
+        for (Doctor doctor: doctors){
+            for (int z = 0, z < doctor.availability; z++){
+                Integer patientNumber = random.nextInt(queue.size()) + 1;
+                doctor.addPatient(queue.get(patientNumber));
+                queue.remove(patientNumber);
+            }
+        }
 
-        Integer pearsonAvailability = Doctor.checkAvailability("Pearson");
-        Integer rodsonAvailability = Doctor.checkAvailability("Rodson");
-        Integer specterAvailability = Doctor.checkAvailability("Specter");
 
-        while (!selectedDoctor.equals("START")) {
-            try {
-                if (selectedDoctor.equals("Pearson")) {
-                    for (int i = 0; i > pearsonAvailability; i++) {
-                        Integer patientNumber = random.nextInt(queue.size()) + 1;
-                        dentist.addPatient(queue.get(patientNumber));
-                        queue.remove(patientNumber);
-                    }
-                }
-                if (selectedDoctor.equals("Rodson")) {
-                    for (int n = 0; n > rodsonAvailability; n++) {
-                        Integer patientNumber = random.nextInt(queue.size()) + 1;
-                        gp.addPatient(queue.get(patientNumber));
-                        queue.remove(patientNumber);
-                    }
-                }
-                if (selectedDoctor.equals("Specter")) {
-                    for (int m = 0; m > specterAvailability; m++) {
-                        Integer patientNumber = random.nextInt(queue.size()) + 1;
-                        laryngologist.addPatient(queue.get(patientNumber));
-                        queue.remove(patientNumber);
-                    }
-                }
+
+
+//
+//        Integer pearsonAvailability = Doctor.checkAvailability("Pearson");
+//        Integer rodsonAvailability = Doctor.checkAvailability("Rodson");
+//        Integer specterAvailability = Doctor.checkAvailability("Specter");
+
+//        while (!selectedDoctor.equals("START")) {
+//            try {
+//                if (selectedDoctor.equals("Pearson")) {
+//                    for (int i = 0; i > pearsonAvailability; i++) {
+//                        Integer patientNumber = random.nextInt(queue.size()) + 1;
+//                        dentist.addPatient(queue.get(patientNumber));
+//                        queue.remove(patientNumber);
+//                    }
+//                }
+//                if (selectedDoctor.equals("Rodson")) {
+//                    for (int n = 0; n > rodsonAvailability; n++) {
+//                        Integer patientNumber = random.nextInt(queue.size()) + 1;
+//                        gp.addPatient(queue.get(patientNumber));
+//                        queue.remove(patientNumber);
+//                    }
+//                }
+//                if (selectedDoctor.equals("Specter")) {
+//                    for (int m = 0; m > specterAvailability; m++) {
+//                        Integer patientNumber = random.nextInt(queue.size()) + 1;
+//                        laryngologist.addPatient(queue.get(patientNumber));
+//                        queue.remove(patientNumber);
+//                    }
+//                }
 //                if(selectedDoctor.equals("START")) {
 //                    break;
 //                }
-            } catch (Exception e) {
-                System.out.println("Doctor not found");
-            }
-        }
+//            } catch (Exception e) {
+//                System.out.println("Doctor not found");
+//            }
+ //       }
 
        // System.out.println(dentist);
     }
