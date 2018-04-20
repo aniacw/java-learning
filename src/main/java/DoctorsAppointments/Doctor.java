@@ -14,7 +14,7 @@ public class Doctor {
     public Doctor() {
     }
 
-    public Doctor(String name, Integer surgery) throws FileNotFoundException {
+    public Doctor(String name, Integer surgery) {
         this.name = name;
         this.surgery = surgery;
     }
@@ -23,19 +23,16 @@ public class Doctor {
         this.patients.add(patient);
     }
 
-    File pearsonFile = new File("Pearson");
-    Scanner readPearsonFile = new Scanner(pearsonFile);
-    Integer pearsonAvailability = readPearsonFile.nextInt();
-
-    File rodsonFile = new File("Rodson");
-    Scanner readRodsonFile = new Scanner(rodsonFile);
-    Integer rodsonAvailability = readRodsonFile.nextInt();
-
-    File specterFile = new File("Specter");
-    Scanner readSpecterFile = new Scanner(specterFile);
-    Integer specterAvailability = readSpecterFile.nextInt();
-
-    public Integer checkAvailability(String name) {
+    public static Integer checkAvailability(String name) throws FileNotFoundException {
+        File pearsonFile = new File("Pearson");
+        Scanner readPearsonFile = new Scanner(pearsonFile);
+        Integer pearsonAvailability = readPearsonFile.nextInt();
+        File rodsonFile = new File("Rodson");
+        Scanner readRodsonFile = new Scanner(rodsonFile);
+        Integer rodsonAvailability = readRodsonFile.nextInt();
+        File specterFile = new File("Specter");
+        Scanner readSpecterFile = new Scanner(specterFile);
+        Integer specterAvailability = readSpecterFile.nextInt();
         if (name.equals("Pearson")) {
             return pearsonAvailability;
         }
@@ -47,6 +44,4 @@ public class Doctor {
         }
         return null;
     }
-
-
 }
