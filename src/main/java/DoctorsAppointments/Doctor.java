@@ -8,40 +8,32 @@ import java.util.Scanner;
 
 public class Doctor {
     private String name;
-    private Integer surgery;
+    private Integer availability;
     private List<Patient> patients = new ArrayList<>();
 
     public Doctor() {
     }
 
-    public Doctor(String name, Integer surgery) {
+    public Doctor(String name) {
         this.name = name;
-        this.surgery = surgery;
     }
 
     public void addPatient(Patient patient) {
         this.patients.add(patient);
     }
 
-    public static Integer checkAvailability(String name) throws FileNotFoundException {
-        File pearsonFile = new File("Pearson");
-        Scanner readPearsonFile = new Scanner(pearsonFile);
-        Integer pearsonAvailability = readPearsonFile.nextInt();
-        File rodsonFile = new File("Rodson");
-        Scanner readRodsonFile = new Scanner(rodsonFile);
-        Integer rodsonAvailability = readRodsonFile.nextInt();
-        File specterFile = new File("Specter");
-        Scanner readSpecterFile = new Scanner(specterFile);
-        Integer specterAvailability = readSpecterFile.nextInt();
-        if (name.equals("Pearson")) {
-            return pearsonAvailability;
+    public Integer loadAvailability() {
+        try {
+            File file = new File(this.name);
+            Scanner reader = new Scanner(file);
+            this.availability = reader.nextInt();
+        } catch (FileNotFoundException e) {
+            return this.availability = 0;
         }
-        if (name.equals("Rodson")) {
-            return rodsonAvailability;
-        }
-        if (name.equals("Specter")) {
-            return specterAvailability;
-        }
-        return null;
+        return this.availability;
+    }
+
+    public Integer getAvailability() {
+        return availability;
     }
 }
